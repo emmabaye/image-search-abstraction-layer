@@ -1,0 +1,22 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "1.0.0",
+  "description": "Image Search Abstraction Layer for freecodecamp API challenge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emmabaye/image-search-abstraction-layer"
+  },
+  "dependencies": {
+    "express": "~4.12.4",
+    "mongoose": "~4.4.5",
+    "dotenv": "~1.2.0",
+    "bing.search": "~1.0.1"
+  },
+  "author": "Emmanuel Abaye",
+  "license": "MIT"
+}
