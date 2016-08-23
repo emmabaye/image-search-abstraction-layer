@@ -20,6 +20,9 @@ app.use('/public', express.static('public'));
 
 var searchTermController = new SearchTermController();
 
+app.get('/', function(req, res){
+ res.sendFile(process.cwd() + '/views/index.htm');
+});
 app.get('/api/latest/imagesearch',searchTermController.getLatest);
 app.get('/api/imagesearch/:searchterm?', searchTermController.saveSearchTerm, searchTermController.getSearchResults);
 
